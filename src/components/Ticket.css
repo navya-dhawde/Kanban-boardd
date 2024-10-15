@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ticket-card {
+  background-color: white;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative; /* Needed for left-bottom shadow */
+  transition: box-shadow 0.3s; /* Smooth transition for shadow */
+}
+
+.ticket-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+  scale: 1.01;
+}
+
+.ticket-content {
+  margin-top: 5px;
+  display: flex;
+  align-items: center; /* Center the items vertically */
+}
+
+.priority-icon {
+  margin-right: 10px; /* Add space between the icon and feature request box */
+}
+
+.feature-request-box {
+  border: 1px solid #d9d9d9; /* Grey border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 8px;
+  width: 100px;
+  height: 10px;
+  font-size: 0.7rem;
+  display: flex; /* Align icon and text horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.circle-icon {
+  width: 10px; /* Size of the circle */
+  height: 10px;
+  border-radius: 50%; /* Make it circular */
+  background-color: #aeaeae; /* Choose a color for the circle */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.feature-request-text {
+  color: #727476; /* Grey color for the text */
+}
+.ticket-header {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between ID and title */
+}
+
+.ticket-id {
+  font-size: 9px;
+  color: #a8a8a8;
+  font-weight: bold;
+  margin: 0;
+  display: flex; /* Make it a flex container */
+  align-items: center; /* Center items vertically */
+}
+
+.ticket-id svg { /* Style for the user icon */
+  margin-left: 8px; /* Space between ID and user icon */
+  width: 20px; /* Adjust size */
+  height: 20px; /* Adjust size */
+}
+
+.ticket-title-with-status {
+  margin-top: 5px;
+  display: flex; /* Use flexbox to align icon and title */
+  align-items: flex-start; /* Align items at the top */
+}
+
+.status-icon-container {
+  width: 24px; /* Fixed width */
+  height: 24px; /* Fixed height */
+  display: flex; /* Center the icon */
+  align-items: flex-start; /* Align icon to the top */
+  justify-content: center; /* Center horizontally */
+  margin-right: 8px; /* Space between icon and title */
+}
+
+.status-icon-container svg {
+  width: 11px; /* Make the icon take full width of the container */
+  height: 11px; /* Make the icon take full height of the container */
+  transition: transform 0.2s ease; /* Optional: add transition for a smooth scaling effect */
+}
+
+.ticket-title {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 11px; /* Adjust size as needed */
+  color: #333; /* Choose a color for the title */
+  margin-top: 0; /* Remove margin to align the title properly with the icon */
+  line-height: 1.2; /* Adjust line height for better spacing */
+}
+

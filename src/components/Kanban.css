@@ -1,0 +1,83 @@
+/* src/components/KanbanBoard.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kanban-board {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .columns {
+    height: 60vw;
+    padding: 0px 12px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #F4F6FA;
+  }
+  
+  .column {
+    width: 30%;
+    background-color: #F4F6FA;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .column h3 {
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+    font-size: 0.8rem;
+    display: flex; /* Use flexbox for h3 */
+    align-items: center; /* Center icons and text vertically */
+  }
+  
+  .column h3 > svg, /* Target SVG icons */
+  .column h3 > img { /* Target user icons */
+    margin-right: 8px; /* Space between icon and text */
+  }
+  .group-header {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+    margin-bottom: 16px; /* Add some space below each header */
+  }
+  
+  .icon-container {
+    display: flex;
+    align-items: center; /* Center icons vertically */
+    margin-left: auto; /* Push icons to the right */
+  }
+  
+  .plus-icon {
+    margin-left: 8px; /* Space between group name and plus icon */
+    cursor: pointer; /* Change cursor on hover */
+  }
+  
+  .three-dots-icon {
+    margin-left: 8px; /* Space between plus icon and three-dot icon */
+    cursor: pointer; /* Change cursor on hover */
+  }
+  .ticket-count {
+    font-weight: 500;
+    margin-left: 10px; /* Add some space between the group name and the count */
+    font-size: 14px; /* Adjust font size as needed */
+    color: #aba9a9; /* Grey color for the count */
+  }
+
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info span {
+    margin-left: 8px; /* Adjust the gap between the icon and the name */
+  }
+  
+  
+  

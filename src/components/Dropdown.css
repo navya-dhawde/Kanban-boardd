@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: flex-start; /* Align items to the start horizontally */
+  height: 60px;
+}
+
+.dropdown-button {
+  margin-left: 1.5rem;
+  background-color: #ffffff;
+  border: 2px solid rgb(185, 183, 183);
+  border-radius: 10px;
+  color: rgb(52, 51, 51);
+  padding: 10px 15px;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  height: 2.7vw;
+  width: 10vw;
+  font-weight: 600;
+  align-items: center;
+}
+
+.drop-button {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  margin-right: 0.5rem;
+  background-color: #ffffff;
+  color: rgb(32, 32, 32);
+  border: 2px solid rgb(177, 176, 176);
+  border-radius: 8px;
+  text-align: left; /* Left-align the text */
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center the content vertically */
+  justify-content: space-between; /* Space between text and arrow icon */
+  font-size: 0.85rem;
+  padding: 5px 10px; /* Adjust padding for better spacing */
+  width: 110px; /* Adjust width as needed */
+  height: 33px; /* Ensure enough height for the button */
+}
+
+.dropdown-icon {
+  width: 18px; /* Set width for the left SVG icon */
+  height: 18px; /* Set height for the left SVG icon */
+  margin-right: 7px; /* Space between the left icon and text */
+}
+
+.dropdown-arrow {
+  width: 25px; /* Set width for the right SVG icon */
+  height: 25px; /* Set height for the right SVG icon */
+  margin-left: auto; /* Push the icon to the right */
+}
+
+.dropdown-menu {
+  position: absolute;
+  margin-left: 1.5rem;
+  top: 100%;
+  left: 0;
+  background-color: rgb(244, 243, 243);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  padding: 10px;
+  border-radius: 10px;
+  width: 220px; /* Increase width */
+  height: 90px;
+  overflow-y: visible; /* Ensure all items are visible */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+
+h4 {
+  margin: 0 0 8px; /* Space below headings */
+}
+
+.group-by,
+.order-by {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  color: #908f8f;
+  font-size: 0.8rem;
+  margin-bottom: 8px; /* Space between Group By and Order By sections */
+  justify-content: space-between; /* Text on the left, dropdown on the right */
+  width: 100%; /* Full width of the dropdown menu */
+  padding: 0 7px; /* Padding for better spacing */
+}
+
+.group-by-dropdown,
+.order-by-dropdown {
+  position: relative;
+  margin-left: 0px; /* Space between label (Group By) and dropdown button */
+}
+.order-by {
+  margin-top: 10px; /* Add some space between the two sections */
+}
+.dropdown-options {
+  position: absolute;
+  top: 30px; /* Adjust top to position below the button */
+  left: 0; /* Align to the left of the dropdown button */
+  background: rgb(253, 250, 250);
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(97, 97, 97, 0.15);
+  z-index: 1000;
+  display: flex;
+  padding: 0.4rem;
+  text-align: left; /* Left-align text inside the dropdown */
+  flex-direction: column; /* Stack buttons vertically */
+  width: 95px; /* Set specific width */
+  height: 100px; /* Set specific height */
+  justify-content: center; /* Center elements vertically */
+  align-items: flex-start; /* Align elements to the start horizontally */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.dropdown-options button {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #292929;
+  width: 100%; /* Full width of the dropdown */
+  height: 40px; /* Set consistent height for dropdown buttons */
+  text-align: left; /* Align text to the left inside buttons */
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex; /* Use flex to align items within the button */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space text and arrow icon properly */
+}
+
+.dropdown-options button:hover {
+  background-color: #f0f0f0; /* Highlight on hover */
+}
+
+.dropdown-options button:focus {
+  outline: none; /* Remove outline for focused buttons */
+}

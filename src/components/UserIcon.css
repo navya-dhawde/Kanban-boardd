@@ -1,0 +1,23 @@
+.user-icon {
+  position: relative;
+  width: 27px; /* Adjust size as needed */
+  height: 27px;
+  border-radius: 50%;
+  background-color: rgb(207, 206, 206); /* Circle color */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  font-size: 12px; /* Adjust font size as needed */
+}
+
+.status-dot {
+  border: 1.5px solid rgb(241, 241, 241);
+  position: absolute;
+  bottom: 1px; /* Position dot towards the bottom */
+  right: 1px; /* Position dot towards the right */
+  width: 6px; /* Dot size */
+  height: 6px; /* Dot size */
+  border-radius: 50%;
+}
